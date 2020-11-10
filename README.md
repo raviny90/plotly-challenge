@@ -1,8 +1,10 @@
 # plotly-challenge
 
-Belly Button Biodiversity
+## Belly Button Biodiversity
 
-The dashboard created conatins a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual. A bubble chart that displays each sample. As well as the individual's demographic information that is selected from the dropdown.
+- The dashboard created conatins the individual's demographic information that is selected from the dropdown.
+- As well as Bar chart with a dropdown menu to display the "Top 10 OTUs" found in that individual. 
+- Below that you can find a Bubble chart that displays each sample.  
 
 in order to run index.html click this link: http://localhost:52330/index.html
 
