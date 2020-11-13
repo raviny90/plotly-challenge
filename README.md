@@ -8,7 +8,7 @@
 
 In order to run index.html file click this link: https://raviny90.github.io/plotly-challenge/
 
-* Creating a Bar chart that uses data from the samples route (/samples/) to display the Washing Frequency.
+* Creating a chart meter that uses data from the samples route (/samples/) to display the Washing Frequency.
 
 ![](images/frequency.PNG)
 
