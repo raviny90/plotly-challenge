@@ -57,16 +57,18 @@ function getplots(id)
         },
         text: sampledata.samples[0].otu_labels
     };
-// Setting the bubble plot layout
+console.log(trace1)
+    // Setting the bubble plot layout
     var layout1 = {
         xaxis :{title:"OTU ID"},
         height :600,
         width :1000
     };
-// Create data variable
+    // Create data variable
     var data1 = [trace1];
-// Creating bubble plot
+    // Creating bubble plot
     Plotly.newPlot("bubble",data1,layout1);
+
     });
 }
 //Create function for the change in events
@@ -80,7 +82,7 @@ function getdemo(id){
     // Read the json to get data
     d3.json("samples.json").then(data => {
         var metadata = data.metadata;
-        console.log(metadata);
+        //console.log(metadata);
     
     // Filter metadata info by id
     var metaid = metadata.filter(meta => meta.id.toString() === id)[0];
@@ -94,9 +96,12 @@ function getdemo(id){
     
     Object.entries(metaid).forEach((key) =>{
         demoinfo.append("h5").text(key[0].toUpperCase() + ":" +key[1] + "\n");
-    });
 
     });
+    // BONUS: Build the Gauge Chart
+    buildGauge(metaid.wfreq);
+    });
+    
 }
 
 // Create function for initializing the data
